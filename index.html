@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./reponsive/_home-reponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-main container d-flex">
+            <div class="header-logo">
+                <img src="./image/logo.png" alt="" class="logo-image">
+            </div>
+            <div class="nav">
+                <ul class="menu d-flex">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link d-flex">Home <ion-icon name="chevron-down-outline" class="icon-down"></ion-icon></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link d-flex">Shop <ion-icon name="chevron-down-outline" class="icon-down"></ion-icon></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link d-flex">Page <ion-icon name="chevron-down-outline" class="icon-down"></ion-icon></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link d-flex">Blog <ion-icon name="chevron-down-outline" class="icon-down"></ion-icon></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link d-flex">Contact <ion-icon name="chevron-down-outline" class="icon-down"></ion-icon></a>
+                    </li>
+                    <ion-icon name="person-outline" class="user-form"></ion-icon>
+                    <div class="header-cart">
+                        <i class="fa fa-cart-plus icon-cart" aria-hidden="true"></i>
+                        <span class="cart-number">0</span>
+                    </div>
+                </ul>
+                <i class="fa fa-bars toggle-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="./image/form-login.jpg" alt="">
+            </div>
+            <div class="login__forms">
+                <form action="#" class="login__register" autocomplete="off">
+                    <ion-icon name="close-outline" class="login-close"></ion-icon>
+                    <h1 class="login__title">Sign in</h1>
+                    <div class="login__box">
+                        <ion-icon name="person-outline" class="login__icon"></ion-icon>
+                        <input type="text" name="user" class="login__input" placeholder="Username">
+                    </div>
+                    <div class="login__box">
+                        <ion-icon name="lock-closed-outline" class="login__icon"></ion-icon>
+                        <input type="password" name="pass" class="login__input" placeholder="Password">
+                        <i class="fa fa-eye icon-eye" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="login__forgot">Forgot password</a>
+                    <button type="submit" class="login__button">Sign in</button>
+
+                    <div>
+                        <span class="login__acount">Don't have an Acount?</span>
+                        <span class="login__singin" id="sign-up">Sign Up</span>
+                    </div>
+                </form>
+
+                <form action="#" class="login__create none" autocomplete="off">
+                    <h1 class="login__title">Create Acount</h1>
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" name="user" class="login__input" placeholder="Username">
+                    </div>
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" name="email" class="login__input" placeholder="Email">
+                    </div>
+                    <div class="login__box">
+                        <i class='bx bx-lock login__icon'></i>
+                        <input type="password" name="pass" class="login__input" placeholder="Password">
+                        <i class="fa fa-eye icon-eye" aria-hidden="true"></i>
+                    </div>
+                    <button type="submit" class="login__button">Sign up</button>
+
+                    <div>
+                        <span class="login__acount">Already have an Acount</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
+                    </div>
+
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" class="login__social-icon">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" class="login__social-icon">
+                            <i class='bx bxl-google'></i>
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="sweet-alert">
+            <i class="fa fa-times alert-close"></i>
+            <div class="alert-message">
+                <i class="fa fa-check icon-message"></i>
+                <span class="span-txt">Please enter the name in the correct format</span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="banner">
+            <div class="banner-main mySwiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="banner-slider swiper-slide">
+                        <div class="banner-image">
+                            <img src="./image/home1-slider1.jpg" alt="">
+                        </div>
+                        <div class="banner-content center-pos center">
+                            <h1>Organic Farm</h1>
+                            <p>get fresh food from our firm to your table</p>
+                            <a href="#" class="banner-link">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="banner-slider swiper-slide">
+                        <div class="banner-image">
+                            <img src="./image/home1-slider2.jpg" alt="">
+                        </div>
+                        <div class="banner-content center-pos center">
+                            <h1>Fresh & Nature</h1>
+                            <p>get fresh food from our firm to your table</p>
+                            <a href="#" class="banner-link">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next chev-next"></div>
+                <div class="swiper-button-prev chev-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </section>
+        <section class="policy">
+            <div class="policy-main container d-grid">
+                <div class="policy-item d-flex">
+                    <img src="./image/policy-icon1.png" alt="" class="policy-image">
+                    <span class="policy-text">Free shipping on orders over $200</span>
+                </div>
+                <div class="policy-item  d-flex">
+                    <img src="./image/policy-icon2.png" alt="" class="policy-image">
+                    <span class="policy-text">30 -Day Return Money Back</span>
+                </div>
+                <div class="policy-item  d-flex">
+                    <img src="./image/policy-icon3.png" alt="" class="policy-image">
+                    <span class="policy-text">24/7 support</span>
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <div class="category-main container box-main">
+                <div class="category-header header-page">
+                    <h3 class="category-title title-page">top categories</h3>
+                </div>
+                <div class="category-list list-page mySwiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category1.png" alt="" class="category-image">
+                                <h3 class="item-name">Vegetables</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category2.png" alt="" class="category-image">
+                                <h3 class="item-name">Fast Food</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category3.png" alt="" class="category-image">
+                                <h3 class="item-name">Fish & Meats</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category4.png" alt="" class="category-image">
+                                <h3 class="item-name">Fruits</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category5.png" alt="" class="category-image">
+                                <h3 class="item-name">Salads</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category6.png" alt="" class="category-image">
+                                <h3 class="item-name">Bread</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category2.png" alt="" class="category-image">
+                                <h3 class="item-name">Bread</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category4.png" alt="" class="category-image">
+                                <h3 class="item-name">Bread</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category7.png" alt="" class="category-image">
+                                <h3 class="item-name">Bread</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category1.png" alt="" class="category-image">
+                                <h3 class="item-name">Bread</h3>
+                            </a>
+                        </div>
+                        <div class="category-item swiper-slide">
+                            <a href="#" class="category-link">
+                                <img src="./image/category6.png" alt="" class="category-image">
+                                <h3 class="item-name">Bread</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next chev-next next-page"></div>
+                    <div class="swiper-button-prev chev-prev prev-page"></div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product-main container">
+                <div class="product-tap header-page d-flex">
+                    <h3 class="tap-title is-active" data-tab="1">Featured</h3>
+                    <h3 class="tap-title" data-tab="2">New Arrival</h3>
+                    <h3 class="tap-title" data-tab="3">On Sale</h3>
+                </div>
+                <div class="product-tab__list">
+                    <div class="product-list d-grid active-product shadow-list" data-tab="1">
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product01.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="modal-product">
+                                <div class="modal-content d-flex">
+                                    <div class="close-modal d-flex center">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </div>
+                                    <div class="modal-content__left">
+                                        <img src="./image/product01.jpg" alt="" class="modal-image">
+                                        <ul class="modal-list d-grid">
+
+                                            <img src="./image/product02.jpg" alt="" class="modal-list__image select-item1">
+                                            <img src="./image/product03.jpg" alt="" class="modal-list__image select-item2">
+                                            <img src="./image/product04.jpg" alt="" class="modal-list__image select-item3">
+                                        </ul>
+                                    </div>
+                                    <div class="modal-content__right">
+                                        <div class="modal-product__title">
+                                            <h3 class="title-hh">Kaoreet lobortis sagittis laoreet</h3>
+                                            <div class="price-cost">
+                                                <del>$89.00</del>
+                                                <span class="discounted-price">$80.00</span>
+                                            </div>
+                                            <p class="modal-product__desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                            </p>
+                                            <div class="counter-cart d-flex">
+                                                <div class="counter-number">
+                                                    <button class="number-minus">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </button>
+                                                    <span class="number-quantity">0</span>
+                                                    <button class="number-plus">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                                </div>
+                                                <a href="#" class="add-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to cart</span>
+                                                </a>
+                                            </div>
+                                            <div class="social-interact">
+                                                <h3 class="social-title">Share this product</h3>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-facebook facebook" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-youtube youtube" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product02.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product03.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="modal-product">
+                                <div class="modal-content d-flex">
+                                    <div class="close-modal d-flex center">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </div>
+                                    <div class="modal-content__left">
+                                        <img src="./image/product01.jpg" alt="" class="modal-image">
+                                        <ul class="modal-list d-grid">
+                                            <img src="./image/product02.jpg" alt="" class="modal-list__image select-item1">
+                                            <img src="./image/product03.jpg" alt="" class="modal-list__image select-item2">
+                                            <img src="./image/product04.jpg" alt="" class="modal-list__image select-item3">
+                                        </ul>
+                                    </div>
+                                    <div class="modal-content__right">
+                                        <div class="modal-product__title">
+                                            <h3>Kaoreet lobortis sagittis laoreet</h3>
+                                            <div class="price-cost">
+                                                <del>$89.00</del>
+                                                <span class="discounted-price">$80.00</span>
+                                            </div>
+                                            <p class="modal-product__desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                            </p>
+                                            <div class="counter-cart d-flex">
+                                                <div class="counter-number">
+                                                    <button class="number-minus">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </button>
+                                                    <span class="number-quantity">0</span>
+                                                    <button class="number-plus">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                                </div>
+                                                <a href="#" class="add-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to cart</span>
+                                                </a>
+                                            </div>
+                                            <div class="social-interact">
+                                                <h3 class="social-title">Share this product</h3>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-facebook facebook" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-youtube youtube" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product04.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="modal-product">
+                                <div class="modal-content d-flex">
+                                    <div class="close-modal d-flex center">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </div>
+                                    <div class="modal-content__left">
+                                        <img src="./image/product01.jpg" alt="" class="modal-image">
+                                        <ul class="modal-list d-grid">
+                                            <img src="./image/product02.jpg" alt="" class="modal-list__image select-item1">
+                                            <img src="./image/product03.jpg" alt="" class="modal-list__image select-item2">
+                                            <img src="./image/product04.jpg" alt="" class="modal-list__image select-item3">
+                                        </ul>
+                                    </div>
+                                    <div class="modal-content__right">
+                                        <div class="modal-product__title">
+                                            <h3>Kaoreet lobortis sagittis laoreet</h3>
+                                            <div class="price-cost">
+                                                <del>$89.00</del>
+                                                <span class="discounted-price">$80.00</span>
+                                            </div>
+                                            <p class="modal-product__desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                            </p>
+                                            <div class="counter-cart d-flex">
+                                                <div class="counter-number">
+                                                    <button class="number-minus">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </button>
+                                                    <span class="number-quantity">0</span>
+                                                    <button class="number-plus">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                                </div>
+                                                <a href="#" class="add-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to cart</span>
+                                                </a>
+                                            </div>
+                                            <div class="social-interact">
+                                                <h3 class="social-title">Share this product</h3>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-facebook facebook" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-youtube youtube" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product05.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="modal-product">
+                                <div class="modal-content d-flex">
+                                    <div class="close-modal d-flex center">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </div>
+                                    <div class="modal-content__left">
+                                        <img src="./image/product01.jpg" alt="" class="modal-image">
+                                        <ul class="modal-list d-grid">
+                                            <img src="./image/product02.jpg" alt="" class="modal-list__image select-item1">
+                                            <img src="./image/product03.jpg" alt="" class="modal-list__image  select-item2">
+                                            <img src="./image/product04.jpg" alt="" class="modal-list__image  select-item3">
+                                        </ul>
+                                    </div>
+                                    <div class="modal-content__right">
+                                        <div class="modal-product__title">
+                                            <h3>Kaoreet lobortis sagittis laoreet</h3>
+                                            <div class="price-cost">
+                                                <del>$89.00</del>
+                                                <span class="discounted-price">$80.00</span>
+                                            </div>
+                                            <p class="modal-product__desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                            </p>
+                                            <div class="counter-cart d-flex">
+                                                <div class="counter-number">
+                                                    <button class="number-minus">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </button>
+                                                    <span class="number-quantity">0</span>
+                                                    <button class="number-plus">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                                </div>
+                                                <a href="#" class="add-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to cart</span>
+                                                </a>
+                                            </div>
+                                            <div class="social-interact">
+                                                <h3 class="social-title">Share this product</h3>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-facebook facebook" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-youtube youtube" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product06.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="modal-product">
+                                <div class="modal-content d-flex">
+                                    <div class="close-modal d-flex center">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </div>
+                                    <div class="modal-content__left">
+                                        <img src="./image/product01.jpg" alt="" class="modal-image">
+                                        <ul class="modal-list d-grid">
+                                            <img src="./image/product02.jpg" alt="" class="modal-list__image select-item1">
+                                            <img src="./image/product03.jpg" alt="" class="modal-list__image  select-item2">
+                                            <img src="./image/product04.jpg" alt="" class="modal-list__image  select-item3">
+                                        </ul>
+                                    </div>
+                                    <div class="modal-content__right">
+                                        <div class="modal-product__title">
+                                            <h3>Kaoreet lobortis sagittis laoreet</h3>
+                                            <div class="price-cost">
+                                                <del>$89.00</del>
+                                                <span class="discounted-price">$80.00</span>
+                                            </div>
+                                            <p class="modal-product__desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                            </p>
+                                            <div class="counter-cart d-flex">
+                                                <div class="counter-number">
+                                                    <button class="number-minus">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </button>
+                                                    <span class="number-quantity">0</span>
+                                                    <button class="number-plus">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                                </div>
+                                                <a href="#" class="add-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to cart</span>
+                                                </a>
+                                            </div>
+                                            <div class="social-interact">
+                                                <h3 class="social-title">Share this product</h3>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-facebook facebook" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-youtube youtube" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product07.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="modal-product">
+                                <div class="modal-content d-flex">
+                                    <div class="close-modal d-flex center">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </div>
+                                    <div class="modal-content__left">
+                                        <img src="./image/product01.jpg" alt="" class="modal-image">
+                                        <ul class="modal-list d-grid">
+                                            <img src="./image/product02.jpg" alt="" class="modal-list__image select-item1">
+                                            <img src="./image/product03.jpg" alt="" class="modal-list__image  select-item2">
+                                            <img src="./image/product04.jpg" alt="" class="modal-list__image  select-item3">
+                                        </ul>
+                                    </div>
+                                    <div class="modal-content__right">
+                                        <div class="modal-product__title">
+                                            <h3>Kaoreet lobortis sagittis laoreet</h3>
+                                            <div class="price-cost">
+                                                <del>$89.00</del>
+                                                <span class="discounted-price">$80.00</span>
+                                            </div>
+                                            <p class="modal-product__desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                            </p>
+                                            <div class="counter-cart d-flex">
+                                                <div class="counter-number">
+                                                    <button class="number-minus">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </button>
+                                                    <span class="number-quantity">0</span>
+                                                    <button class="number-plus">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                                </div>
+                                                <a href="#" class="add-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to cart</span>
+                                                </a>
+                                            </div>
+                                            <div class="social-interact">
+                                                <h3 class="social-title">Share this product</h3>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-facebook facebook" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-youtube youtube" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product08.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="modal-product">
+                                <div class="modal-content d-flex">
+                                    <div class="close-modal d-flex center">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </div>
+                                    <div class="modal-content__left">
+                                        <img src="./image/product01.jpg" alt="" class="modal-image">
+                                        <ul class="modal-list d-grid">
+                                            <img src="./image/product02.jpg" alt="" class="modal-list__image select-item1">
+                                            <img src="./image/product03.jpg" alt="" class="modal-list__image  select-item2">
+                                            <img src="./image/product04.jpg" alt="" class="modal-list__image  select-item3">
+                                        </ul>
+                                    </div>
+                                    <div class="modal-content__right">
+                                        <div class="modal-product__title">
+                                            <h3>Kaoreet lobortis sagittis laoreet</h3>
+                                            <div class="price-cost">
+                                                <del>$89.00</del>
+                                                <span class="discounted-price">$80.00</span>
+                                            </div>
+                                            <p class="modal-product__desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                            </p>
+                                            <div class="counter-cart d-flex">
+                                                <div class="counter-number">
+                                                    <button class="number-minus">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </button>
+                                                    <span class="number-quantity">0</span>
+                                                    <button class="number-plus">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                                </div>
+                                                <a href="#" class="add-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to cart</span>
+                                                </a>
+                                            </div>
+                                            <div class="social-interact">
+                                                <h3 class="social-title">Share this product</h3>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-facebook facebook" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="modal-social">
+                                                    <i class="fa fa-youtube youtube" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list d-grid" data-tab="2">
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product09.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search view-product" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product10.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product11.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product12.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product05.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product06.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product07.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product08.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list d-grid" data-tab="3">
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product01.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product02.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product03.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product07.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product06.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product12.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product11.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product10.jpg" alt="" class="product-image">
+                                <h3 class="product-categories item-name center">Fast Foods, Fast Foods</h3>
+                                <h3 class="product-title center">Sed tempor ehicula non commodo</h3>
+                                <div class="price-cost center">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price">$80.00</span>
+                                </div>
+                            </a>
+                            <div class="social-product d-flex center">
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="link-cart">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature">
+            <div class="feature-main container d-grid">
+                <div class="feature-product">
+                    <div href="#" class="feature-link">
+                        <img src="./image/fullbanner-1.jpg" alt="" class="feature-image">
+                    </div>
+                </div>
+                <div class="feature-product">
+                    <div class="feature-link">
+                        <img src="./image/fullbanner-2.jpg" alt="" class="feature-image">
+                    </div>
+                </div>
+                <div class="feature-product">
+                    <div class="feature-link">
+                        <img src="./image/fullbanner-3.jpg" alt="" class="feature-image">
+                    </div>
+                </div>
+                <div class="feature-product">
+                    <div class="feature-link">
+                        <img src="./image/fullbanner-4.jpg" alt="" class="feature-image">
+                    </div>
+                </div>
+                <div class="feature-product">
+                    <div class="feature-link">
+                        <img src="./image/fullbanner-5.jpg" alt="" class="feature-image">
+                    </div>
+                </div>
+                <div class="feature-product">
+                    <div class="feature-link">
+                        <img src="./image/fullbanner-6.jpg" alt="" class="feature-image">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="sale">
+            <div class="sale-main container">
+                <div class="sale-off center">
+                    <h3 class="sale-title">Organic 40% sale off </h3>
+                    <p class="sale-caption">Greenfarm Deal Of The Day</p>
+                </div>
+                <div class="content-slider swiper-container mySwiper banner-main">
+                    <div class="swiper-wrapper">
+                        <div class="sale-content d-flex swiper-slide">
+                            <div class="sale-content__left">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product01.jpg" alt="" class="product-image">
+                                <div class="countdown d-flex">
+                                    <div id="day">NA</div>
+                                    <div id="hour">NA</div>
+                                    <div id="minute">NA</div>
+                                    <div id="second">NA</div>
+                                </div>
+                            </div>
+                            <div class="sale-content__right center">
+                                <h3 class="title-hh title-content">Dolorum fuga eget posuere</h3>
+                                <div class="price-cost">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price price-sale">$80.00</span>
+                                </div>
+                                <p class="sale-txt">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                </p>
+                                <a href="#" class="banner-link">Shop now</a>
+                            </div>
+                        </div>
+                        <div class="sale-content d-flex swiper-slide">
+                            <div class="sale-content__left">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product02.jpg" alt="" class="product-image">
+                                <div class="countdown d-flex">
+                                    <div id="day">NA</div>
+                                    <div id="hour">NA</div>
+                                    <div id="minute">NA</div>
+                                    <div id="second">NA</div>
+                                </div>
+                            </div>
+                            <div class="sale-content__right center">
+                                <h3 class="title-hh title-content">Dolorum fuga eget posuere</h3>
+                                <div class="price-cost">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price price-sale">$80.00</span>
+                                </div>
+                                <p class="sale-txt">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                </p>
+                                <a href="#" class="banner-link">Shop now</a>
+                            </div>
+                        </div>
+                        <div class="sale-content d-flex swiper-slide">
+                            <div class="sale-content__left">
+                                <span class="sale-txt">Sale</span>
+                                <img src="./image/product03.jpg" alt="" class="product-image">
+                                <div class="countdown d-flex">
+                                    <div id="day">NA</div>
+                                    <div id="hour">NA</div>
+                                    <div id="minute">NA</div>
+                                    <div id="second">NA</div>
+                                </div>
+                            </div>
+                            <div class="sale-content__right center">
+                                <h3 class="title-hh title-content">Dolorum fuga eget posuere</h3>
+                                <div class="price-cost">
+                                    <del>$89.00</del>
+                                    <span class="discounted-price price-sale">$80.00</span>
+                                </div>
+                                <p class="sale-txt">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus
+                                </p>
+                                <a href="#" class="banner-link">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next chev-next sale-next"></div>
+                    <div class="swiper-button-prev chev-prev sale-prev"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="best-seller">
+            <div class="seller-main container box-main">
+                <div class="category-header header-page">
+                    <h3 class="category-title title-page">Best seller</h3>
+                </div>
+                <div class="seller-slider swiper-container mySwiper list-page">
+                    <div class="swiper-wrapper">
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product01.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product02.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product03.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product04.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product05.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product06.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product06.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product06.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product06.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="seller-item swiper-slide">
+                            <a href="#" class="seller-link d-flex">
+                                <img src="./image/product06.jpg" alt="" class="product-image">
+                                <div class="seller-item__card">
+                                    <h3 class="product-categories item-name">Fast Foods, Fast Foods</h3>
+                                    <h3 class="product-title">Sed tempor ehicula non commodo</h3>
+                                    <div class="price-cost">
+                                        <del>$89.00</del>
+                                        <span class="discounted-price">$80.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next chev-next next-page"></div>
+                    <div class="swiper-button-prev chev-prev prev-page"></div>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="blog-main container">
+                <div class="category-header header-page">
+                    <h3 class="category-title title-page">greenfarm news</h3>
+                </div>
+                <div class="blog-list d-grid shadow-list">
+                    <div class="blog-item">
+                        <a href="#">
+                            <div class="blog-image">
+                                <img src="./image/blog01.jpg" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <span class="blog-date">29.08.2021</span>
+                                <h3 class="blog-title">Blog image post</h3>
+                                <a href="#" class="blog-link">continue <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-item">
+                        <a href="#">
+                            <div class="blog-image">
+                                <img src="./image/blog02.jpg" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <span class="blog-date">29.08.2021</span>
+                                <h3 class="blog-title">Blog image post</h3>
+                                <a href="#" class="blog-link">continue <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-item">
+                        <a href="#">
+                            <div class="blog-image">
+                                <img src="./image/blog03.jpg" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <span class="blog-date">29.08.2021</span>
+                                <h3 class="blog-title">Blog image post</h3>
+                                <a href="#" class="blog-link">continue <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brand">
+            <div class="brand-main container box-main">
+                <div class="category-header header-page">
+                    <h3 class="category-title title-page">Brand logos</h3>
+                </div>
+                <div class="brand-list shadow-list mySwiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="brand-item swiper-slide ">
+                            <img src="./image/brand1.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand2.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand3.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand4.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand5.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand6.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand3.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand2.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand5.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand4.png" alt="" class="brand-image">
+                        </div>
+                        <div class="brand-item swiper-slide">
+                            <img src="./image/brand1.png" alt="" class="brand-image">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next chev-next next-page"></div>
+                    <div class="swiper-button-prev chev-prev prev-page"></div>
+                </div>
+            </div>
+        </section>
+        <section class="newletter">
+            <div class="newletter-main container d-flex">
+                <div class="newletter-left d-flex">
+                    <img src="./image/icon-newsletter.png" alt="" class="newletter-icon">
+                    <h3 class="newletter-title">Send Newsletter</h3>
+                </div>
+                <div class="newletter-right d-flex">
+                    <p class="newletter-txt">
+                        Sign up for our newsletter to get <span>up-to-date from us</span>
+                    </p>
+                    <form action="" class="newletter-sub">
+                        <input type="text" name="" id="" placeholder="Your email address">
+                        <button class="btn-sub" type="submit">subscribe!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-main container d-flex">
+                <div class="flow-us">
+                    <h3 class="contact-title">Follow us</h3>
+                    <div class="contact-social">
+                        <a href="" class="contact-link">
+                            <i class="fa fa-facebook facebook"></i>
+                        </a>
+                        <a href="" class="contact-link">
+                            <i class="fa fa-twitter twitter"></i>
+                        </a>
+                        <a href="" class="contact-link">
+                            <i class="fa fa-instagram instagram"></i>
+                        </a>
+                        <a href="" class="contact-link">
+                            <i class="fa fa-linkedin linkedin"></i>
+                        </a>
+                        <a href="" class="contact-link">
+                            <i class="fa fa-rss rss"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h3 class="contact-title">Contact us</h3>
+                    <div class="contact-list d-flex">
+                        <div class="contact-item d-flex">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <div class="contact-info">
+                                <p class="contact-name">Address</p>
+                                <p class="contact-txt">123 New Design Str, Melbourne, Australia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <div class="contact-info">
+                                <p class="contact-name">Phone</p>
+                                <p class="contact-txt">1-888-123-456-89</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <div class="contact-info">
+                                <p class="contact-name">Email</p>
+                                <p class="contact-txt">support@hastech.company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main container">
+            <div class="footer-list d-grid">
+                <div class="footer-item">
+                    <h3 class="footer-title">
+                        Infomation
+                    </h3>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-title">
+                        Infomation
+                    </h3>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-title">
+                        Infomation
+                    </h3>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-title">
+                        Infomation
+                    </h3>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-author container d-flex">
+        <p class="author-by">
+            © 2021 by Huy Hoang . All Rights Reserved
+        </p>
+        <div class="payment d-flex">
+            <span>Allow payment base on</span>
+            <img src="./image/payment-icon.png" alt="" class="payment-img">
+        </div>
+    </div>
+
+    <a href="#" class="scroll-up">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
+
+    <script src="./Js/form.js"></script>
+    <!-- <script src="./Js/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./Js/slider.js"></script>
+    <script src="./Js/app.js"></script>
+    <script src="./Js/countdown.js"></script>
+
+
+</body>
+
+</html>
